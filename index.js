@@ -1,10 +1,12 @@
-const sqlite = require('sqlite'),
+const sqlite    = require('sqlite'),
       Sequelize = require('sequelize'),
-      request = require('request'),
-      express = require('express'),
-      app = express();
+      request   = require('request'),
+      express   = require('express'),
+      app       = express();
 
 const { PORT=3000, NODE_ENV='development', DB_PATH='./db/database.db' } = process.env;
+
+// http://credentials-api.generalassemb.ly/4576f55f-c427-4cfc-a11c-5bfe914ca6c1
 
 // START SERVER
 Promise.resolve()
