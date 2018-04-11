@@ -15,6 +15,7 @@ Promise.resolve()
 
 // ROUTES
 app.get('/films/:id/recommendations', getFilmRecommendations);
+  console.log(getFilmRecommendations);
 
 // ROUTE HANDLER
 function getFilmRecommendations(req, res) {
